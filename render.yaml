@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: sugaring_crm
+    env: php
+    buildCommand: "composer install"
+    startCommand: "php artisan serve --host 0.0.0.0 --port 10000"
+    plan: free
+    envVars:
+      - key: APP_KEY
+        sync: false
+      - key: APP_DEBUG
+        sync: false
+      - key: DB_CONNECTION
+        sync: false
+      - key: DB_HOST
+        sync: false
+      - key: DB_PORT
+        sync: false
+      - key: DB_DATABASE
+        sync: false
+      - key: DB_USERNAME
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
