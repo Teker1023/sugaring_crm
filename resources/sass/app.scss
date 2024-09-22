@@ -1,0 +1,34 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+.full-page-background {
+    background-color: #ffcccb;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.main-subtitle {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
