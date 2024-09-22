@@ -2,7 +2,10 @@ services:
   - type: web
     name: sugaring_crm
     env: php
-    buildCommand: "composer install"
+    buildCommand: |
+      # Встановлюємо PHP залежності
+      curl -sS https://getcomposer.org/installer | php
+      php composer.phar install
     startCommand: "php artisan serve --host 0.0.0.0 --port 10000"
     plan: free
     envVars:
